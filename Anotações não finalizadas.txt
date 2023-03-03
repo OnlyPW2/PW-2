@@ -1,0 +1,64 @@
+MVC é um padrão de desenvolvimento que força o programador a separar os componentes de um aplicativo web, de acordo com suas responsabilidades.
+
+MVC = Model-View-Controller
+
+Modelo (Model): é a camada responsável pelos dados do sistema. Ela representa as entidades do sistema, como usuários, produtos, pedidos, etc. É nesta camada que as regras de negócio são implementadas, como validações e cálculos.
+
+Visão (View): é a camada responsável pela interface com o usuário. Ela apresenta as informações do sistema para o usuário, permitindo a interação com o mesmo. Na camada de visão, são definidas as telas, botões, formulários e todos os elementos visuais que o usuário pode ver e interagir.
+
+Controlador (Controller): é a camada que liga as outras duas. Ele é responsável por receber as requisições do usuário e encaminhá-las para a camada adequada. Na camada de controlador, é implementada a lógica de fluxo de informação entre as camadas, garantindo que as informações cheguem onde são necessárias.
+
+
+Classe
+
+Uma classe é uma estrutura que define as características e comportamentos de um tipo de objeto.
+É como se fosse um molde que descreve as propriedades e métodos que os objetos dessa classe terão.
+Exemplo:
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def falar(self):
+        print(f"{self.nome} está falando")
+
+Objeto
+
+Já um objeto é uma instância de uma classe. Ou seja, quando um objeto é criado a partir de uma classe, ele recebe todas as características e comportamentos definidos na classe. Cada objeto pode ter seus próprios valores para as propriedades da classe, mas compartilha os mesmos métodos e comportamentos.
+Exemplo:
+
+pessoa1 = Pessoa("João", 30)
+pessoa2 = Pessoa("Maria", 25)
+
+print(pessoa1.nome)  // João
+print(pessoa2.idade)  // 25
+
+pessoa1.falar()  // João está falando
+pessoa2.falar()  // Maria está falando
+
+
+Resumo do exemplo: foram criados dois objetos "Pessoa", "pessoa1" e "pessoa2", com valores diferentes para as propriedades "nome" e "idade". Ambos compartilham o mesmo método "falar", mas com valores específicos para cada objeto.
+
+
+Pontos no pdf do Enildo
+
+Objetos similares são agrupados em classes.
+
+Uma propriedade é uma característica de um objeto, portanto, um objeto é uma coleção de propriedades.
+
+Uma classe define o comportamento de seus objetos, através de métodos.
+ 
+Os estados possíveis destes objetos, através de atributos.
+
+
+IIS (Internet Information Services - anteriormente denominado Internet Information Server) é um servidor
+web criado pela Microsoft para seus sistemas operacionais para servidores. 
+
+VIEWBAG
+VIEWDATA
+TEMPDATA
+
+
+
+
+

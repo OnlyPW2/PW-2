@@ -1,0 +1,42 @@
+1-Criar uma aplicação com o nome ExeLuanI
+
+2-Criar um controller com nome de AulaController
+
+3-Na action Index da Controller, crie uma view sem layout com o texto "View sem Layout" em uma tag h1
+
+4-Mude a rota padrão para Index do AulaController (Obs: é no routconfig dentro do App_Start)
+
+Coloque um link na view Index do AulaController para retornar para página Index do HomeController.
+@Html.ActionLink("Menu", "Index", "HomeController")
+
+Crie uma opção no menu com nome “Sem Layout” que irá direcionar para a action Index do AulaController.
+Caso não dê:
+<nav>
+  <ul>
+    <li>@Html.ActionLink("Sem Layout", "Index", "AulaController")</li>
+  </ul>
+</nav>
+
+5- No AulaController, crie uma nova action com nome de “Aluno”, nela crie uma ViewBag para armazenar o
+texto “Os melhores alunos são aqueles que estudam mais!”.
+public ActionResult Aluno()
+{
+	ViewBag.Mensagem = "Os melhores alunos são aqueles que estudam mais!";
+	return View();
+}
+
+
+Crie uma view com layout para action aluno do AulaController, na aba deve estar escrito “Estudo”, na página
+o texto “Aluno” é apresentado, e o conteúdo da ViewBag.
+Tu vai segurar no aluno e criar uma view para a action
+title joga estudo
+mete um h1 e joga <h1>@ViewBag.Mensagem</h1>
+
+
+Acrescente uma opção no menu com rotulo “Estudo” que irá direcionar para a action Aluno do AulaController.
+<nav>
+  <ul>
+    <li>@Html.ActionLink("Sem Layout", "Index", "AulaController")</li>
+    <li>@Html.ActionLink("Estudo", "Aluno", "AulaController")</li>
+  </ul>
+</nav>
